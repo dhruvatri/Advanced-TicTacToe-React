@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+#board1 {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #e0f7fa; /* Light blue background */
+    border: 1px solid #007bb5; /* Darker blue border */
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#rows1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 6%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.clickCell1 {
+    width: 2.5em;
+    height: 2em;
+    border: 0.1em solid #007bb5;
+    font-size: 1.5em;
+    font-weight: 900;
+    background-color: #b3e5fc; /* Light blue for cells */
+    color: #004c8c; /* Dark blue text */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0;
+}
+
+.clickCell1:hover {
+    background-color: #4fc3f7; /* Slightly darker blue on hover */
+    color:black;
+}
+
+
+.siderow{
+    margin-top: 1em;
+}
+
+.sidecol{
+    margin-left: 1em;
+}
+
+.resetButton2{
+    height : 2em;
+    font-size: 1.5em;
+    margin-bottom: -0.3em;
+}
