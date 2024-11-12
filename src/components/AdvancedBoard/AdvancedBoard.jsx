@@ -83,7 +83,7 @@ const AdvancedBoard = ({ player, setPlayer, winner, setWinner, gameOver, setGame
         {
             const newWinBoard = winBoard;
             newWinBoard[row][col] = 'draw';
-            setPlayer('X');
+            // setPlayer('X');
             setWinBoard(newWinBoard);
             for (let ii=0; ii<3; ii+=1){
                 for (let jj=0 ;jj<3 ; jj++)
@@ -97,7 +97,7 @@ const AdvancedBoard = ({ player, setPlayer, winner, setWinner, gameOver, setGame
         {
             if (board[rr+i][cc+0]==board[rr+i][cc+1] && board[rr+i][cc+0]==board[rr+i][cc+2] && board[rr+i][cc+0]!==undefined && board[rr+i][cc+0]!=='')
             {
-                setPlayer('X');
+                // setPlayer('X');
                 const newWinBoard = winBoard;
                 newWinBoard[row][col] = board[rr+i][cc+0];
                 setWinBoard(newWinBoard);
@@ -113,7 +113,7 @@ const AdvancedBoard = ({ player, setPlayer, winner, setWinner, gameOver, setGame
             }
             if (board[rr+0][cc+i]==board[rr+1][cc+i] && board[rr+0][cc+i]==board[rr+2][cc+i] && board[rr+0][cc+i]!=undefined && board[rr+0][cc+i]!='')
             {
-                setPlayer('X');
+                // setPlayer('X');
                 const newWinBoard = winBoard;
                 newWinBoard[row][col] = board[rr+0][cc+i];
                 setWinBoard(newWinBoard);
@@ -132,7 +132,7 @@ const AdvancedBoard = ({ player, setPlayer, winner, setWinner, gameOver, setGame
             const newWinBoard = winBoard;
             newWinBoard[row][col] = board[rr+0][cc+0];
             setWinBoard(newWinBoard);
-            setPlayer('X');
+            // setPlayer('X');
             for (let ii=0; ii<3; ii+=1){
                 for (let jj=0 ;jj<3 ; jj++)
                 {
@@ -146,7 +146,7 @@ const AdvancedBoard = ({ player, setPlayer, winner, setWinner, gameOver, setGame
             const newWinBoard = winBoard;
             newWinBoard[row][col] = board[rr+1][cc+1];
             setWinBoard(newWinBoard);
-            setPlayer('X');
+            // setPlayer('X');
             for (let ii=0; ii<3; ii+=1){
                 for (let jj=0 ;jj<3 ; jj++)
                 {
